@@ -1,0 +1,148 @@
+.psc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: var(--secondary);
+	width: 100%;
+	min-height: 100vh;
+}
+
+.psc a {
+	text-decoration: none;
+}
+
+.psc img {
+	margin-bottom: 20px;
+	max-width: 100%;
+	width: 200px;
+	height: auto;
+}
+
+.nth {
+	text-align: center;
+}
+.nth h1 {
+	font-size: 30px;
+	color: var(--primary);
+	margin-bottom: 10px;
+}
+.nth p {
+	margin-bottom: 20px;
+}
+.nth a {
+	width: fit-content;
+	width: -moz-fit-content;
+	padding: 8px 20px;
+	color: white;
+	background: var(--primary);
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.psc__btn {
+	width: fit-content;
+	width: -moz-fit-content;
+	padding: 6px 20px;
+	color: var(--primary);
+	border-radius: 5px;
+	border: 1px solid currentColor;
+	cursor: pointer;
+	display: block;
+	margin-right: 0;
+	margin-left: auto;
+	margin-top: 10px;
+}
+
+.psc__form {
+	background: white;
+	min-height: 300px;
+	width: 300px;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.psc__form h2,
+.psc__details h2 {
+	color: var(--primary);
+	font-size: 16px;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+.psc__form label {
+	color: var(--primary);
+	text-transform: capitalize;
+	font-size: 14px;
+}
+
+.psc__form input {
+	color: initial;
+	display: block;
+	padding: 6px 10px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	border: 2px solid;
+	width: 100%;
+	outline: none;
+	font-size: 15px;
+}
+
+.psc__form input:focus {
+	border-color: var(--primary);
+}
+
+.psc__form input::placeholder {
+	text-transform: capitalize;
+	font-size: 12px;
+}
+
+.psc__form .next,
+.prev {
+	width: fit-content;
+	width: -moz-fit-content;
+	padding: 6px 20px;
+	color: white;
+	background: var(--primary);
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	display: block;
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.psc__details {
+	background: white;
+	min-height: 300px;
+	width: 300px;
+	border-radius: 10px;
+	padding: 20px;
+	display: none;
+}
+
+.psc__details h3 {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--primary);
+	margin-bottom: 5px;
+}
+
+.psc__details h2 {
+	margin-bottom: 2px;
+}
+
+.psc__details span p {
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 14px;
+}
+
+.psc__details > p {
+	font-size: 12px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}

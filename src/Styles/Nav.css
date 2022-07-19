@@ -1,0 +1,212 @@
+.nav {
+  width: 100%;
+  background: var(--secondary);
+  position: -webkit-sticky;
+  position: sticky;
+  position: -webkit-sticky;
+  top: -3px;
+  z-index: 100;
+}
+
+.nav .lsn {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  width: 200px;
+  height: auto;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mvs {
+  white-space: nowrap;
+  overflow-x: auto;
+  display: none !important;
+  justify-content: center !important;
+}
+
+.mvs::-webkit-scrollbar {
+  appearance: none;
+  height: 0;
+}
+
+.nav li {
+  list-style-type: none;
+  padding: 5px 10px;
+  color: var(--primary);
+}
+
+.sic {
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--primary);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.nav form,
+.smd form {
+  border: 2px solid var(--primary);
+  border-radius: 6px;
+  padding: 5px 10px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav form input,
+.smd input {
+  border: none;
+  outline: none;
+  flex: 1;
+  height: 100%;
+  background: none;
+}
+
+.nav form button,
+.smd button {
+  border: none;
+  outline: none;
+  background: none !important;
+  cursor: pointer;
+}
+
+.nav form svg,
+.smd svg {
+  color: var(--primary);
+}
+
+.nav__basket {
+  position: relative;
+}
+
+.nav__basket > span:first-child {
+  position: absolute;
+  top: -7px;
+  left: 10px;
+  background: var(--primary);
+  border-radius: 50%;
+  color: white;
+  height: 16px;
+  width: 16px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smd {
+  position: fixed;
+  top: 0;
+  background: #e6e9e0c7;
+  width: 100%;
+  min-height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 90;
+}
+
+.smd.open {
+  display: flex;
+  animation: smdopen 0.5s ease-in-out forwards;
+}
+
+@keyframes smdopen {
+  from {
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.smd.close {
+  display: flex;
+  animation: smdclose 0.5s ease-in-out forwards;
+}
+
+@keyframes smdclose {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .fsic {
+    display: none !important;
+  }
+
+  .sic {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 850px) {
+  nav .lsn ul:first-of-type li:not(:first-child) {
+    display: none;
+  }
+
+  .mvs {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 530px) {
+  .nav a > span,
+  .sic span {
+    display: none;
+  }
+  .nav__basket span:first-child {
+    display: flex;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav__logo {
+    width: 150px !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .nav__logo {
+    width: 110px !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .mvs li:first-child {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 300px) {
+  .nav .lsn li {
+    padding: 5px;
+  }
+}

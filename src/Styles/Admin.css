@@ -1,0 +1,120 @@
+.admin nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--secondary);
+	box-shadow: 0 3px 5px rgb(224, 224, 224);
+	padding: 0 20px;
+}
+
+.admin nav a {
+	color: var(--primary);
+}
+
+.admin img {
+	width: 180px;
+	height: auto;
+}
+
+.admin nav ul {
+	list-style-type: none;
+}
+.admin nav li {
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.admin .ctrBtn {
+	background: var(--primary);
+	border-radius: 5px;
+}
+
+.admin .ctrBtn a {
+	color: white;
+}
+
+.npd {
+	padding: 30px 0;
+}
+
+.npd form {
+	padding: 0 15%;
+	height: auto;
+}
+
+.npd .form__flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.npd .form__flex > div {
+	width: 450px;
+	max-width: 100%;
+}
+
+.npd form h2 {
+	color: var(--primary);
+	margin-bottom: 30px;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.npd form input,
+.npd form textarea {
+	display: block;
+	padding: 10px;
+	border-radius: 5px;
+	outline: none;
+	width: 100%;
+	border: 2px solid var(--primary);
+	margin-top: 10px;
+}
+
+.npd form label {
+	display: block;
+	margin-bottom: 20px;
+	color: var(--primary);
+	font-size: 1em;
+	text-transform: capitalize;
+}
+
+.npd form button {
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	color: white;
+	background: var(--primary);
+	border-radius: 5px;
+	display: block;
+	margin: 50px 0 0 auto;
+	cursor: pointer;
+}
+
+.npd form input[type="file"]::-webkit-file-upload-button {
+	background: var(--primary);
+	color: white;
+	border: none;
+	padding: 5px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.npd span {
+	display: block;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--primary);
+}
+
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+	color: var(--primary) !important;
+}
+
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked
+	+ .MuiSwitch-track {
+	background-color: var(--primary) !important;
+}

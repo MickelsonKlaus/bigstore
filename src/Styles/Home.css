@@ -1,0 +1,104 @@
+.hbg {
+	background: #5ab280;
+	width: 100%;
+	min-height: 80vh;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 20px;
+	padding-bottom: 0;
+}
+
+.hbg div {
+	flex: 1 1 40%;
+	align-self: center;
+	padding: 0 4%;
+	text-align: left;
+}
+
+.hbg div h1 {
+	font-size: 60px;
+	color: var(--secondary);
+	height: 100%;
+	margin-bottom: 10px;
+}
+
+.hbg div p {
+	color: var(--secondary);
+	margin-bottom: 20px;
+	font-size: 18px;
+	opacity: 0.8;
+	display: block !important;
+}
+
+.hbg div a {
+	padding: 10px 20px;
+	text-decoration: none;
+	color: var(--primary);
+	background: white;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: fit-content;
+	border-radius: 5px;
+}
+
+.hbg div a svg {
+	align-self: flex-end;
+}
+
+.hbg img {
+	height: auto;
+	transform: rotateY(180deg);
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.pxl {
+	background: var(--secondary);
+	text-align: center;
+	min-height: 100px;
+	padding: 30px 0;
+}
+
+.pxl p {
+	margin-bottom: 30px;
+}
+
+.pxl a {
+	padding: 5px 20px;
+	color: white;
+	background: var(--primary);
+	border-radius: 5px;
+}
+
+@media (max-width: 996px) {
+	.hbg div {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.hbg div a {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 760px) {
+	.hbg div h1 {
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 460px) {
+	.hbg {
+		min-height: 55vh;
+	}
+}
+
+@media (max-width: 360px) {
+	.hbg div h1 {
+		font-size: 30px;
+	}
+}

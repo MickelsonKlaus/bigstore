@@ -1,0 +1,51 @@
+.help {
+	min-height: 50vh;
+	padding: 20px 5%;
+}
+
+.help h1 {
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--primary);
+}
+
+.help .cc {
+	display: -ms-grid;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+	place-items: center;
+	place-content: center;
+	gap: 30px;
+	width: 100%;
+	padding: 30px 0;
+}
+
+.cc .card {
+	width: 100%;
+	min-height: 150px;
+	border-radius: 5px;
+	background: var(--secondary);
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	cursor: pointer;
+	transition: 0.5s ease-in-out;
+}
+
+.cc .card:hover {
+	box-shadow: 2px 2px 10px rgba(175, 175, 175, 0.514);
+	transform: scale(1.1);
+}
+
+.cc .card h3 {
+	font-size: 18px;
+	font-weight: 500;
+	color: var(--primary);
+	margin-bottom: 10px;
+}
+
+.cc .card p {
+	font-size: 14px;
+}

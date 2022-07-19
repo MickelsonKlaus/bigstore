@@ -1,0 +1,91 @@
+.receipt {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.receipt h1 {
+	font-size: 24px;
+	font-weight: 500;
+	color: var(--primary);
+	margin-top: 30px;
+}
+
+.rt {
+	background: white !important;
+}
+
+.receipt img {
+	max-width: 100%;
+	width: 200px;
+	height: auto;
+}
+
+.rtt {
+	padding-top: 50px;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: repeat(auto-fit, minmax(200px, 500px));
+	grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
+	place-content: center;
+	align-items: start;
+	gap: 20px;
+	text-align: center;
+	width: 100%;
+	position: relative;
+}
+
+.rit {
+	margin-bottom: 30px;
+}
+
+.info {
+	place-content: center;
+	place-items: center;
+	background: var(--secondary);
+	min-height: 100px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 100px;
+	text-align: left;
+}
+
+.info h3 {
+	color: var(--primary);
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.info ul {
+	padding: 0 20px;
+}
+
+.info li {
+	margin-bottom: 10px;
+}
+
+.nth {
+	text-align: center;
+}
+
+.nth h1 {
+	font-size: 30px;
+}
+
+.nth p {
+	margin-bottom: 30px;
+	font-weight: 500;
+}
+
+.nth a {
+	padding: 10px 20px;
+	color: white;
+	background: var(--primary);
+	border-radius: 5px;
+}

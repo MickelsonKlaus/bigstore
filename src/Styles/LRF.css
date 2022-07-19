@@ -1,0 +1,125 @@
+.lf {
+	width: 100%;
+	height: 100vh;
+	background: var(--secondary);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	padding-bottom: 30px;
+}
+
+.lf.reset {
+	padding-top: 50px;
+}
+
+.lf.reset .bck {
+	color: var(--primary);
+	display: block;
+	text-align: center;
+}
+
+.lf .fgt {
+	text-align: center;
+}
+
+.lf .fgt a {
+	color: var(--primary);
+}
+
+.lf .form {
+	max-width: 100%;
+	width: 350px;
+	height: auto;
+	padding: 0 5px;
+}
+
+.form h2 {
+	text-align: center;
+	color: var(--primary);
+	margin-bottom: 30px;
+	font-weight: 500;
+}
+
+.form input {
+	display: block;
+	padding: 10px;
+	border-radius: 5px;
+	outline: none;
+	width: 100%;
+	border: 2px solid var(--primary);
+	margin-top: 10px;
+}
+
+.lf.reset .form input {
+	margin-top: 20px;
+}
+
+.lf.reset .form label {
+	text-align: center;
+}
+
+.form label {
+	display: block;
+	margin-bottom: 20px;
+	color: var(--primary);
+	font-size: 1.1em;
+}
+
+.form button {
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	color: white;
+	background: var(--primary);
+	border-radius: 5px;
+	display: block;
+	margin: 0 auto 15px;
+	cursor: pointer;
+}
+
+.lf.lf.reset > a {
+	align-self: center;
+	margin-bottom: 30px;
+}
+
+.lf > a {
+	text-decoration: none;
+	align-self: flex-start;
+}
+
+.lf img {
+	max-width: 100%;
+	width: 200px;
+	height: auto;
+}
+
+fieldset {
+	text-align: center;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-color: var(--primary);
+	max-width: 100%;
+	width: 350px;
+	margin: 15px 0;
+}
+
+fieldset legend {
+	padding: 10px;
+	font-weight: bold;
+	color: var(--primary);
+}
+
+.reg {
+	margin-top: 10px;
+}
+
+.reg__btn {
+	border: none;
+	outline: none;
+	background: none;
+	color: var(--primary);
+	cursor: pointer;
+}

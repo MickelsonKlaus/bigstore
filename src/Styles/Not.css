@@ -1,0 +1,71 @@
+.not {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--secondary);
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+
+.not h1 {
+	font-size: 60px;
+	margin-bottom: 5px;
+	color: rgb(212, 29, 29);
+}
+
+.not h2 {
+	margin-bottom: 30px;
+	font-weight: 400;
+}
+
+.not a {
+	padding: 10px 20px;
+	color: white;
+	background: var(--primary);
+	border-radius: 5px;
+}
+
+.qst,
+.qst2,
+.qst3 {
+	color: var(--primary);
+	position: fixed;
+	top: 10px;
+	animation: unknown 5s ease-in-out infinite;
+}
+
+.qst svg,
+.qst2 svg,
+.qst3 svg {
+	font-size: 30px;
+}
+
+.qst {
+	left: calc(30px * var(--i));
+	animation-delay: calc(0.5s * var(--i));
+}
+
+.qst2 {
+	right: calc(30px * var(--i));
+	animation-delay: calc(0.5s * calc(-1 * var(--i)));
+}
+
+.qst3 {
+	animation-delay: calc(0.7s * calc(-1 * var(--i)));
+	left: calc(10% * var(--i));
+	transform: translate(calc(-10% * var(--i)));
+}
+
+@keyframes unknown {
+	from {
+		top: 10px;
+	}
+	50% {
+		top: 120vh;
+	}
+	to {
+		top: 10px;
+	}
+}
